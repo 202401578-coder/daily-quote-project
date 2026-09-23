@@ -10,9 +10,9 @@ on:
         type: string
         required: false
         default: ''
-  # 수동 배포 성공 후 아래 두 줄의 #을 지워 예약을 켭니다.
-  # schedule:
-  #   - cron: '17 23 * * *'  # UTC 23:17 = 다음 날 한국시간 08:17, 매일
+  # 수동 배포 성공을 확인한 뒤 예약 실행을 활성화했습니다.
+  schedule:
+    - cron: '17 23 * * *'  # UTC 23:17 = 다음 날 한국시간 08:17, 매일
 
 permissions:
   contents: read
